@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel='stylesheet' href='weatherApp.css'>
+ </head>
+ <body>
+   <div id='time'>
+   </div>
+   <div class = 'center-align'>
+      <h1 class='indigo-text'>Want to Creep?</h1>
+      <h2 id='weatherCheck'class='blue-text'>let's check out a webCam<h2>
+        <img id='webcam'>
+      <div class="row">
+       <form>
+          <div class="input-field col s6 m3 offset-m1">
+             <input placeholder="city" id="desiredCity" type="text">
+          </div>
+          <div class="input-field col s6 m2 ">
+            <input placeholder="state or country" id="desiredState" type="text">
+          </div>
+          <div class="input-field col s6 m2 offset-m1 offset-s1">
+            <input placeholder="or zipcode" id="desiredZip" type="text">
+          </div>
+       </form>
+       <h6 id='currentLocation' class= 'col m2 s6 grey-text'>or get current location<button></button></h6>
+   </div>
+   <button id ='goButton' class= 'z-depth-5 cyan darken-3 white-text'>commence creep</button>   
+      <div>
+      <span id='city'class='indigo-text'></span> <span id='state'class='indigo-text'></span>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+   <script src='weatherApp.js'></script>   
+ </body>  
+</html>
